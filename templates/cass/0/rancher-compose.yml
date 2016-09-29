@@ -7,12 +7,25 @@
   maintainer: "Pawan Kumar <monu.pawan@gmail.com>"
   uuid: cassandra-0
   questions:
+    - variable: "seed_scale"
+      description: "Number of cassandra seed nodes"
+      label: "Cassandra Seed Nodes:"
+      required: true
+      default: 2
+      type: "int"
     - variable: "cassandra_scale"
-      description: "Number of cassandra nodes"
-      label: "Cassandra Nodes:"
+      description: "Number of cassandra peer nodes"
+      label: "Cassandra peer Nodes:"
       required: true
       default: 3
       type: "int"
-cass:
+    - variable: "jvmmem"
+      description: "JVM Memory in Kb"
+      label: "JVM Memory:"
+      required: true
+      default: 256
+      type: "string"
+Seed:
+  scale: ${seed_scale}
+Peer:
   scale: ${cassandra_scale}
-  retain_ip: true
