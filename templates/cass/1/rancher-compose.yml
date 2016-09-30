@@ -2,7 +2,7 @@
   name: cassandra
   version: 0.10.0.0-rancher1
   description: |
-    cassandra cluster 2.2.4.
+    cassandra cluster 1.1.6
   minimum_rancher_version: v0.59.0
   maintainer: "Pawan Kumar <monu.pawan@gmail.com>"
   uuid: cassandra-0
