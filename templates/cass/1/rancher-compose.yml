@@ -1,6 +1,6 @@
 .catalog:
   name: cassandra
-  version: 0.10.0.0-rancher1
+  version: 0.10.0.0-rancher-cassandra-1.1.6
   description: |
     cassandra cluster 1.1.6
   minimum_rancher_version: v0.59.0
