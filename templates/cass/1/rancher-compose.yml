@@ -17,7 +17,7 @@
       description: "Number of cassandra peer nodes"
       label: "Cassandra peer Nodes:"
       required: true
-      default: 3
+      default: 2
       type: "int"
     - variable: "jvmmem"
       description: "JVM Memory in Kb"
@@ -29,13 +29,13 @@
       description: "Max Heap size in GB"
       label: "Max heap size:"
       required: true
-      default: 12
+      default: 12G
       type: "string"
     - variable: "heapsize"
       description: "Heap size in mb"
       label: "Heap size:"
       required: true
-      default: 400
+      default: 400M
       type: "string"
 Seed:
   scale: ${seed_scale}
