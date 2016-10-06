@@ -39,5 +39,7 @@
       type: "string"
 Seed:
   scale: ${seed_scale}
+  retain_ip: true
 Peer:
   scale: ${cassandra_scale}
+  retain_ip: true
