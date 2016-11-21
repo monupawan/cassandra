@@ -17,7 +17,7 @@ Seed:
     JVMMEM: ${jvmmem}
     MAX_HEAP_SIZE: ${maxheap}
     HEAP_NEWSIZE: ${heapsize}
-  image: 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/cassandra-1.1.6:2
+  image: 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/cassandra-1.1.6:4
   command: bash /usr/local/cassandra/apache-cassandra-1.1.6/bin/start-cass-service.sh seed Seed ${seed_scale} ${cassandra_scale}
 Peer:
   tty: true
@@ -37,7 +37,7 @@ Peer:
     JVMMEM: ${jvmmem}
     MAX_HEAP_SIZE: ${maxheap}
     HEAP_NEWSIZE: ${heapsize}
-  image: 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/cassandra-1.1.6:2
+  image: 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/cassandra-1.1.6:4
   command: bash /usr/local/cassandra/apache-cassandra-1.1.6/bin/start-cass-service.sh peer Seed ${seed_scale} ${cassandra_scale}
   links: 
    - Seed:Seed
